@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: Black(255, 255, 255);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+    color: white;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Colegios de San Gil</h1>
+  <p>En esta página vas a encontrar gran informacion sobre los colegios de San Gil</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Colegio San José de Guanentá</h2>
+    <p>El colegio San José de Guanentá es otro de los símbolos valiosos en la historia y vida de San Gil. Su fundación se hunde en la memoria del país ya que corresponde a los que algunos historiadores han denominado los colegios santanderinos, llamados así porque fueron fundados por Francisco de Paula Santander. En las estampas santandereanas Juan de Dios Arias trae el Decreto del 22 de mayo de 1824 que en su artículo 1°  dice así: “Usando de la facultad que concede al Gobierno el artículo 6 de la Ley de 28 de julio del año 11°, el Colegio de la Provincia del Socorro se establecerá en la Villa de San Gil y se denominará Colegio de San José de Guanentá, con cuyo nombre era conocido el territorio que hoy comprende dicha Provincia, cuando la conquista de los españoles”.  </p>
+  </div>
+  
+  <div class="column">
+    <h2>Colegio la Presentación</h2>
+    <p></p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p></p>
+  </div>
+</div>
+
+</body>
+</html>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</body>
+</html>
