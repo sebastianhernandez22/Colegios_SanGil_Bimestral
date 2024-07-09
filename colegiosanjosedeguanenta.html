@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+
+div {
+  width: 1400px;
+  height:200px;
+  background-color: rgb(221, 164, 164);
+  animation-name: example;
+  animation-duration: 10s;
+}
+
+@keyframes example {
+  0%   {background-color: rgb(231, 163, 163);}
+  25%  {background-color: rgb(240, 240, 114);}
+  50%  {background-color: rgb(151, 151, 212);}
+  100% {background-color: rgb(171, 207, 171);}
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><h1>Colegio San José de Guanentá</h1></h1>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Año de su Fundación</h2>
+    <p>Los orígenes de esta emblemática institución educativa se remontan a finales del siglo XVIII, cuando en el año 1785, el Cabildo de San Gil solicitó la creación de una cátedra pública de gramática, atendiendo a la recomendación del Corregidor de Tunja. Fue así como, el 23 de febrero de 1787, el Cabildo convocó a interesados en ocupar el cargo de Catedrático de Gramática, siendo seleccionado para tan honorable posición el bachiller José Gabriel de Silva. Las clases de esta incipiente Escuela de Primeras Letras dieron inicio el 4 de septiembre de 1787, marcando el comienzo de una larga y destacada trayectoria.
+        Casi cuatro décadas después, el 22 de mayo de 1824, el General Francisco de Paula Santander, en su calidad de Vicepresidente de la República de Colombia, expidió un decreto que establecía que el colegio de la provincia del Socorro se ubicara en la ciudad de San Gil, otorgándole el nombre de "Colegio San José de Guanentá". Este nombre fue cuidadosamente elegido, pues el "San José" hace referencia a los santos protectores de la antigua escuela, mientras que "Guanentá" alude a la región geográfica donde se asentaría la nueva institución.
+        Desde entonces, el Colegio San José de Guanentá ha recorrido un camino de dos siglos, consolidándose como una de las más prestigiosas instituciones educativas de Santander y del país. Sus aulas han sido testigo del paso de innumerables generaciones de estudiantes, quienes han forjado sus sueños y aspiraciones bajo el cobijo de esta emblemática casa de estudios.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Escudo representativo</h2>
+    <div class="row">
+        <div class="column">
+          <img src="bandera colegio.jpeg" alt="Girl in a jacket" style="width:420px;height:400px;">
+        </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <h2>Plataforma del Colegio</h2>
+    <div class="topnav">
+        <a href="https://e.plataformaintegra.net/guanenta/">haz click para ingresar a la Plataforma oficial del colegio san josé de guanenta</a>
+  </div>
+</div>
+
+</body>
+</html>

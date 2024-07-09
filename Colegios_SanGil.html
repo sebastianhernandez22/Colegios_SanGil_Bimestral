@@ -3,121 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: Black(255, 255, 255);
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-  color: white;
-}
-
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-    color: white;
-  }
-}
-</style>
-</head>
-<body>
-
-<div class="header">
-  <h1>Colegios de San Gil</h1>
-  <p>En esta página vas a encontrar gran informacion sobre los colegios de San Gil</p>
-</div>
-
-
-<div class="topnav">
-  <a href="#">Colegio San José de Guanentá</a>
-  <a href="#">Colegio Nuestra Señora de la Presentación</a>
-  <a href="#">Colegio Cooperativo</a>
-  <a href="#">Colegio el Rosario</a>
-  <a href="#">Colegio San Carlos</a>
-  <a href="#">Colegio Infantil Colina de Sueños</a>
-  <a href="#">Colegio Infantil Colmbianitos</a>
-  <a href="#">Colegio Luis Camacho Rueda</a>
-  <a href="#">Colegio Experimental de Paz</a>
-</div>
-
-
-<div class="row">
-  <div class="column">
-    <h2>Colegio San José de Guanentá</h2>
-    <p>El colegio San José de Guanentá es otro de los símbolos valiosos en la historia y vida de San Gil. Su fundación se hunde en la memoria del país ya que corresponde a los que algunos historiadores han denominado los colegios santanderinos, llamados así porque fueron fundados por Francisco de Paula Santander. En las estampas santandereanas Juan de Dios Arias trae el Decreto del 22 de mayo de 1824 que en su artículo 1°  dice así: “Usando de la facultad que concede al Gobierno el artículo 6 de la Ley de 28 de julio del año 11°, el Colegio de la Provincia del Socorro se establecerá en la Villa de San Gil y se denominará Colegio de San José de Guanentá, con cuyo nombre era conocido el territorio que hoy comprende dicha Provincia, cuando la conquista de los españoles”.  </p>
-  </div>
-  
-  <div class="column">
-    <h2>Colegio la Presentación</h2>
-    <p></p>
-  </div>
-  
-  <div class="column">
-    <h2>Column</h2>
-    <p></p>
-  </div>
-</div>
-
-</body>
-</html>
+    <title>Colegios de San Gil</title>
     <style>
+        * {
+          box-sizing: border-box;
+        }
+
         body {
-            background-color: black;
+          margin: 0;
+          background-color: black;
+        }
+
+        .header {
+          background-color: #f1f1f1;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .topnav a:hover {
+          background-color: #ddd;
+          color: Black(255, 255, 255);
+        }
+
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 15px;
+          color: white;
+        }
+
+        .row::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        @media screen and (max-width:600px) {
+          .column {
+            width: 100%;
+            color: white;
+          }
+        }
+
+        .column img {
+          max-width: 200%;
+          height: auto;
         }
     </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Colegios de San Gil</h1>
+        <p>En esta página vas a encontrar gran información sobre los colegios de San Gil</p>
+    </div>
+
+    <div class="topnav">
+      <a href="colegiosanjosedeguanenta.html" class="button">Colegio San Jose de Guenentá
+      </a>
+      <a href="colegionuestraseñoradelapresentacion.html" class="button">Colegio Nuestra Señora de la Presentación
+      </a>
+      <a href="colegiocooperativo.html" class="button">Colegio Cooperativo
+      </a>
+      <a href="colegioelrosario.html" class="button">Colegio el Rosario
+      </a>
+      <a href="colegiosancarlos.html" class="button">Colegio San Carlos
+      </a>
+      <a href="colegioinfantilcolinadesueños.html" class="button">Colegio Infantil Colina de Sueños
+      </a>
+      <a href="colegioinfantilcolombianitos.html" class="button">Colegio Infantil Colombianitos
+      </a>
+      <a href="colegioluiscamachorueda.html" class="button">Colegio Luis Camacho Rueda
+      </a>
+      <a href="colegioexperimentaldelapaz.html" class="button">Colegio Experimental de la Paz
+      </a>
+    </div>
+
+    <div class="row">
+        <div class="rows">
+          <img src="bandera_ San_Gil.jpg" alt="Girl in a jacket" style="width:1500px;height:600px;">
+        </div>
+    </div>
+
+    <script>
+        function openCollegeWindow(collegeName) {
+            window.open(`about:blank`, collegeName).document.write(`
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>${collegeName}</title>
+                </head>
+                <body>
+                    <h1>${collegeName}</h1>
+                    <p>Esta es la página en blanco para el ${collegeName}.</p>
+                </body>
+                </html>
+            `);
+        }
+    </script>
 </body>
 </html>
